@@ -20,7 +20,7 @@
     "require": {
         "php": "^8.2",
         "quiqqer/core": "^2.30",
-        "quiqqer/sitetypes": "^2",
+        "quiqqer/sitetypes": "^2.10.0",
         "quiqqer/controls": "^2.4"
     },
     "autoload": {
