@@ -8,6 +8,7 @@
 /** @var QUI\Projects\Site $Site */
 
 /** @var QUI\Interfaces\Template\EngineInterface $Engine */
+/** @var QUI\Template $Template */
 
 use QUI\Projects\Media\Image;
 use QUI\Projects\Media\Utils as MediaUtils;
@@ -43,6 +44,7 @@ if ($Site->getAttribute('quiqqer.settings.blog.sitesToDisplay') == 'all') {
 }
 
 $ChildrenList = new QUI\Controls\ChildrenList([
+    'ownJsonLd' => false,
     'showContent' => false,
     'showImages' => $Site->getAttribute('quiqqer.settings.blog.showImages'),
     'showHeader' => $Site->getAttribute('quiqqer.settings.blog.showHeader'),
@@ -140,7 +142,21 @@ $ChildrenList->addEvent('onMetaList', function (
     $MetaList->add('image', $image);
 });
 
+// Prepare the visible list and explicitly register its structured data before the page head.
+$childrenListHtml = $ChildrenList->create();
+
+try {
+    $ListJsonLd = $ChildrenList->getJsonLd();
+
+    if ($ListJsonLd !== null) {
+        $Template->getJsonLd()->setJsonLdNode('blog', $ListJsonLd->getJsonLdData());
+    }
+} catch (QUI\Exception $Exception) {
+    QUI\System\Log::addWarning($Exception->getMessage());
+}
+
 $Engine->assign([
+    'childrenListHtml' => $childrenListHtml,
     'ChildrenList' => $ChildrenList,
     'showPageContent' => $showPageContent
 ]);
