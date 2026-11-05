@@ -57,7 +57,12 @@ class Author extends QUI\Control
         try {
             $authorData = $this->getAuthorData();
         } catch (Exception $Exception) {
-            QUI\System\Log::addInfo($Exception->getMessage());
+            if (
+                !$Exception instanceof QUI\Users\Exception
+                || $Exception->getCode() !== 404
+            ) {
+                QUI\System\Log::addInfo($Exception->getMessage());
+            }
 
             $authorData = [
                 'name' => false,
