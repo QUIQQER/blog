@@ -98,11 +98,16 @@ $ChildrenList->addEvent('onMetaList', function (
         $User = QUI::getUsers()->get($Site->getAttribute('c_user'));
         $MetaList->add('author', $User->getName());
     } catch (QUI\Exception $Exception) {
-        QUI\System\Log::addInfo($Exception->getMessage(), [
-            'project' => $Project->getName(),
-            'lang' => $Project->getLang(),
-            'site' => $Site->getId()
-        ]);
+        if (
+            !$Exception instanceof QUI\Users\Exception
+            || $Exception->getCode() !== 404
+        ) {
+            QUI\System\Log::addInfo($Exception->getMessage(), [
+                'project' => $Project->getName(),
+                'lang' => $Project->getLang(),
+                'site' => $Site->getId()
+            ]);
+        }
     }
 
     // publisher
