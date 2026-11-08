@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<quiqqer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="https://www.quiqqer.com/docs/schemas/2.x/locale.xsd">
 <locales>
     <groups name="quiqqer/blog" datatype="php,js">
-        <locale name="package.title">
+        <locale name="package.title" context="administration">
             <de><![CDATA[QUIQQER - Blog]]></de>
             <en><![CDATA[QUIQQER - Blog]]></en>
             <es><![CDATA[QUIQQER - Blog]]></es>
@@ -10,7 +12,7 @@
             <it><![CDATA[QUIQQER - Blog]]></it>
             <pl><![CDATA[QUIQQER - Blog]]></pl>
         </locale>
-        <locale name="package.description" html="true">
+        <locale name="package.description" html="true" context="administration">
             <de><![CDATA[
             Erstellen Sie Ihr eigenes Online-Tagebuch.<br />
             Mit den zur Verfügung gestellten Seitentypen ist das Verwalten und Erstellen Ihres eigenen Blogs kein Problem mehr.
@@ -25,7 +27,7 @@
             <it><![CDATA[Crea il tuo diario online.<br /> I tipi di pagina disponibili consentono di creare e gestire facilmente il proprio blog.]]></it>
             <pl><![CDATA[Stwórz własny dziennik internetowy.<br /> Dostępne typy stron ułatwiają tworzenie bloga i zarządzanie nim.]]></pl>
         </locale>
-        <locale name="quiqqerblog:bloglist.description">
+        <locale name="quiqqerblog:bloglist.description" context="administration">
             <de><![CDATA[Listet alle darunter liegenden Seiten auf.]]></de>
             <en><![CDATA[Lists all underlying pages.]]></en>
             <es><![CDATA[Muestra todas las páginas subordinadas.]]></es>
@@ -34,7 +36,7 @@
             <it><![CDATA[Elenca tutte le pagine figlie.]]></it>
             <pl><![CDATA[Wyświetla wszystkie strony podrzędne.]]></pl>
         </locale>
-        <locale name="quiqqerblog:blogentry.title">
+        <locale name="quiqqerblog:blogentry.title" context="administration">
             <de><![CDATA[QUIQQER - Blogeintrag]]></de>
             <en><![CDATA[QUIQQER - Blog entry]]></en>
             <es><![CDATA[QUIQQER - Entrada de blog]]></es>
@@ -43,7 +45,7 @@
             <it><![CDATA[QUIQQER - Articolo del blog]]></it>
             <pl><![CDATA[QUIQQER - Wpis na blogu]]></pl>
         </locale>
-        <locale name="quiqqerblog:blogentry.description">
+        <locale name="quiqqerblog:blogentry.description" context="administration">
             <de><![CDATA[Erstellt eine neue Seite für einen Blogeintrag]]></de>
             <en><![CDATA[Creates a new page for a blog entry]]></en>
             <es><![CDATA[Crea una nueva página para una entrada de blog]]></es>
@@ -52,7 +54,7 @@
             <it><![CDATA[Crea una nuova pagina per un articolo del blog]]></it>
             <pl><![CDATA[Tworzy nową stronę dla wpisu na blogu]]></pl>
         </locale>
-        <locale name="quiqqerblog:bloglist.title">
+        <locale name="quiqqerblog:bloglist.title" context="administration">
             <de><![CDATA[QUIQQER - Blogliste]]></de>
             <en><![CDATA[QUIQQER - Blog list]]></en>
             <es><![CDATA[QUIQQER - Lista de entradas del blog]]></es>
@@ -61,7 +63,7 @@
             <it><![CDATA[QUIQQER - Elenco degli articoli del blog]]></it>
             <pl><![CDATA[QUIQQER - Lista wpisów na blogu]]></pl>
         </locale>
-        <locale name="quiqqer/blog:blog/entry.title">
+        <locale name="quiqqer/blog:blog/entry.title" context="administration">
             <de><![CDATA[QUIQQER - Blogeintrag]]></de>
             <en><![CDATA[QUIQQER - Blog entry]]></en>
             <es><![CDATA[QUIQQER - Entrada de blog]]></es>
@@ -70,7 +72,7 @@
             <it><![CDATA[QUIQQER - Articolo del blog]]></it>
             <pl><![CDATA[QUIQQER - Wpis na blogu]]></pl>
         </locale>
-        <locale name="quiqqer/blog:blog/entry.description">
+        <locale name="quiqqer/blog:blog/entry.description" context="administration">
             <de><![CDATA[
             Erstellen Sie eine neue Seite, um einen Blogeintrag zu verfassen. Die Blogeinträge werden unter der Blogliste angezeigt und aufgelistet.
             ]]></de>
@@ -81,7 +83,7 @@
             <it><![CDATA[Crea una nuova pagina per scrivere un articolo del blog. Gli articoli vengono visualizzati nell'elenco del blog.]]></it>
             <pl><![CDATA[Utwórz nową stronę, aby napisać wpis na blogu. Wpisy są wyświetlane na liście bloga.]]></pl>
         </locale>
-        <locale name="quiqqer/blog:blog/list.title">
+        <locale name="quiqqer/blog:blog/list.title" context="administration">
             <de><![CDATA[QUIQQER - Blogliste]]></de>
             <en><![CDATA[QUIQQER - Blog list]]></en>
             <es><![CDATA[QUIQQER - Lista de entradas del blog]]></es>
@@ -90,7 +92,7 @@
             <it><![CDATA[QUIQQER - Elenco degli articoli del blog]]></it>
             <pl><![CDATA[QUIQQER - Lista wpisów na blogu]]></pl>
         </locale>
-        <locale name="quiqqer/blog:blog/list.description">
+        <locale name="quiqqer/blog:blog/list.description" context="administration">
             <de><![CDATA[Legen Sie eine Blogliste an. Alle darunter liegenden Seiten werden aufgelistet.]]></de>
             <en><![CDATA[Create a blog list. All child pages are listed.]]></en>
             <es><![CDATA[Cree una lista de entradas del blog. Se mostrarán todas las páginas subordinadas.]]></es>
@@ -101,7 +103,7 @@
         </locale>
 
         <!-- brick author-->
-        <locale name="brick.author.title">
+        <locale name="brick.author.title" context="administration">
             <de><![CDATA[Blog: Autor]]></de>
             <en><![CDATA[Blog: Author]]></en>
             <es><![CDATA[Blog: autor]]></es>
@@ -110,54 +112,138 @@
             <it><![CDATA[Blog: autore]]></it>
             <pl><![CDATA[Blog: autor]]></pl>
         </locale>
-        <locale name="brick.author.description">
-            <de><![CDATA[Zeigt den Autor des Blogbeitrags. Ein Autor wird nur angezeigt, wenn der Baustein auf einer Seite vom Typ „QUIQQER - Blogeintrag“ platziert wird.]]></de>
-            <en><![CDATA[Shows the author of the blog post. An author is only displayed if the brick is placed on a page of type "QUIQQER - Blog entry".]]></en>
-            <es><![CDATA[Muestra el autor de la entrada del blog. Solo se muestra un autor si el bloque se coloca en una página de tipo «QUIQQER - Entrada de blog».]]></es>
-            <pt><![CDATA[Mostra o autor do artigo do blogue. Só é apresentado um autor se o bloco for colocado numa página do tipo «QUIQQER - Artigo do blogue».]]></pt>
-            <fr><![CDATA[Affiche l'auteur de l'article de blog. Un auteur n'est affiché que si le bloc est placé sur une page de type « QUIQQER - Article de blog ».]]></fr>
-            <it><![CDATA[Mostra l'autore dell'articolo del blog. L'autore viene visualizzato solo se il blocco è inserito in una pagina di tipo «QUIQQER - Articolo del blog».]]></it>
-            <pl><![CDATA[Wyświetla autora wpisu na blogu. Autor jest widoczny tylko wtedy, gdy blok znajduje się na stronie typu „QUIQQER - Wpis na blogu”.]]></pl>
+        <locale name="brick.author.description" context="administration">
+            <de><![CDATA[Zeigt den Autor des aktuellen Blogeintrags als Autorenkarte. Für Inhalte und Sidebars geeignet; Gastautoren werden in den Seiteneinstellungen gepflegt.]]></de>
+            <en><![CDATA[Shows the current blog entry author as an author card. Suitable for content areas and sidebars; guest authors are maintained in the page settings.]]></en>
+            <es><![CDATA[Muestra al autor de la entrada actual del blog en una tarjeta de autor. Adecuado para áreas de contenido y barras laterales; los autores invitados se gestionan en la configuración de la página.]]></es>
+            <pt><![CDATA[Apresenta o autor do artigo atual do blogue num cartão de autor. Adequado para áreas de conteúdo e barras laterais; os autores convidados são geridos nas definições da página.]]></pt>
+            <fr><![CDATA[Affiche l’auteur de l’article de blog en cours dans une fiche d’auteur. Convient aux zones de contenu et aux barres latérales ; les auteurs invités sont gérés dans les paramètres de la page.]]></fr>
+            <it><![CDATA[Mostra l’autore dell’articolo corrente del blog in una scheda autore. Adatto alle aree di contenuto e alle barre laterali; gli autori ospiti vengono gestiti nelle impostazioni della pagina.]]></it>
+            <pl><![CDATA[Wyświetla autora bieżącego wpisu na blogu w karcie autora. Nadaje się do obszarów treści i paneli bocznych; autorami gościnnymi zarządza się w ustawieniach strony.]]></pl>
         </locale>
-        <locale name="brick.setting.author.template">
+
+        <locale name="brick.author.layout" context="administration">
             <de><![CDATA[Vorlage]]></de>
-            <en><![CDATA[Template]]></en>
-            <es><![CDATA[Plantilla]]></es>
-            <pt><![CDATA[Modelo]]></pt>
-            <fr><![CDATA[Modèle]]></fr>
-            <it><![CDATA[Modello]]></it>
-            <pl><![CDATA[Szablon]]></pl>
+            <en><![CDATA[Layout]]></en>
+            <es><![CDATA[Diseño]]></es>
+            <pt><![CDATA[Disposição]]></pt>
+            <fr><![CDATA[Mise en page]]></fr>
+            <it><![CDATA[Layout]]></it>
+            <pl><![CDATA[Układ]]></pl>
         </locale>
-        <locale name="brick.setting.author.template.largeImageTop">
-            <de><![CDATA[Großes Bild oben]]></de>
-            <en><![CDATA[Large image on top]]></en>
-            <es><![CDATA[Imagen grande arriba]]></es>
-            <pt><![CDATA[Imagem grande em cima]]></pt>
-            <fr><![CDATA[Grande image en haut]]></fr>
-            <it><![CDATA[Immagine grande in alto]]></it>
-            <pl><![CDATA[Duży obraz u góry]]></pl>
+
+        <locale name="brick.author.layout.left" context="administration">
+            <de><![CDATA[Bild links]]></de>
+            <en><![CDATA[Image on the left]]></en>
+            <es><![CDATA[Imagen a la izquierda]]></es>
+            <pt><![CDATA[Imagem à esquerda]]></pt>
+            <fr><![CDATA[Image à gauche]]></fr>
+            <it><![CDATA[Immagine a sinistra]]></it>
+            <pl><![CDATA[Obraz po lewej]]></pl>
         </locale>
-        <locale name="brick.setting.author.template.largeImageLeft">
-            <de><![CDATA[Großes Bild links]]></de>
-            <en><![CDATA[Large image on left]]></en>
-            <es><![CDATA[Imagen grande a la izquierda]]></es>
-            <pt><![CDATA[Imagem grande à esquerda]]></pt>
-            <fr><![CDATA[Grande image à gauche]]></fr>
-            <it><![CDATA[Immagine grande a sinistra]]></it>
-            <pl><![CDATA[Duży obraz po lewej]]></pl>
+
+        <locale name="brick.author.layout.top" context="administration">
+            <de><![CDATA[Bild oben – alles zentriert]]></de>
+            <en><![CDATA[Image on top – all centred]]></en>
+            <es><![CDATA[Imagen arriba – todo centrado]]></es>
+            <pt><![CDATA[Imagem em cima – tudo centrado]]></pt>
+            <fr><![CDATA[Image en haut – tout centré]]></fr>
+            <it><![CDATA[Immagine in alto – tutto centrato]]></it>
+            <pl><![CDATA[Obraz u góry – wszystko wyśrodkowane]]></pl>
         </locale>
-        <locale name="brick.setting.author.template.smallImageLeft">
-            <de><![CDATA[Kleines Bild links]]></de>
-            <en><![CDATA[Small image on left]]></en>
-            <es><![CDATA[Imagen pequeña a la izquierda]]></es>
-            <pt><![CDATA[Imagem pequena à esquerda]]></pt>
-            <fr><![CDATA[Petite image à gauche]]></fr>
-            <it><![CDATA[Immagine piccola a sinistra]]></it>
-            <pl><![CDATA[Mały obraz po lewej]]></pl>
+
+        <locale name="brick.author.layout.topLeft" context="administration">
+            <de><![CDATA[Bild oben – alles linksbündig]]></de>
+            <en><![CDATA[Image on top – all left-aligned]]></en>
+            <es><![CDATA[Imagen arriba – todo alineado a la izquierda]]></es>
+            <pt><![CDATA[Imagem em cima – tudo alinhado à esquerda]]></pt>
+            <fr><![CDATA[Image en haut – tout aligné à gauche]]></fr>
+            <it><![CDATA[Immagine in alto – tutto allineato a sinistra]]></it>
+            <pl><![CDATA[Obraz u góry – wszystko wyrównane do lewej]]></pl>
+        </locale>
+
+        <locale name="brick.author.layout.topTextLeft" context="administration">
+            <de><![CDATA[Bild oben – Text linksbündig]]></de>
+            <en><![CDATA[Image on top – text left-aligned]]></en>
+            <es><![CDATA[Imagen arriba – texto alineado a la izquierda]]></es>
+            <pt><![CDATA[Imagem em cima – texto alinhado à esquerda]]></pt>
+            <fr><![CDATA[Image en haut – texte aligné à gauche]]></fr>
+            <it><![CDATA[Immagine in alto – testo allineato a sinistra]]></it>
+            <pl><![CDATA[Obraz u góry – tekst wyrównany do lewej]]></pl>
+        </locale>
+
+        <locale name="brick.author.layout.description" context="administration">
+            <de><![CDATA[Wählen Sie die Anordnung der Autorenkarte. Bei „Bild oben – Text linksbündig“ bleiben Bild, Name und Zusatzinfo zentriert; nur die Beschreibung ist linksbündig. „Kompakt“ zeigt ein kleines Bild neben dem Namen und die Beschreibung darunter.]]></de>
+            <en><![CDATA[Choose the arrangement of the author card. With “Image on top – text left-aligned”, the image, name and additional information remain centred; only the description is left-aligned. “Compact” shows a small image beside the name and the description below.]]></en>
+            <es><![CDATA[Elige la disposición de la tarjeta de autor. Con «Imagen arriba – texto alineado a la izquierda», la imagen, el nombre y la información adicional permanecen centrados; solo la descripción se alinea a la izquierda. «Compacto» muestra una imagen pequeña junto al nombre y la descripción debajo.]]></es>
+            <pt><![CDATA[Escolhe a disposição do cartão de autor. Com «Imagem em cima – texto alinhado à esquerda», a imagem, o nome e as informações adicionais permanecem centrados; apenas a descrição fica alinhada à esquerda. «Compacto» apresenta uma imagem pequena ao lado do nome e a descrição por baixo.]]></pt>
+            <fr><![CDATA[Choisissez la disposition de la fiche d’auteur. Avec « Image en haut – texte aligné à gauche », l’image, le nom et les informations complémentaires restent centrés ; seule la description est alignée à gauche. « Compact » affiche une petite image à côté du nom et la description en dessous.]]></fr>
+            <it><![CDATA[Scegli la disposizione della scheda autore. Con «Immagine in alto – testo allineato a sinistra», l’immagine, il nome e le informazioni aggiuntive rimangono centrati; solo la descrizione è allineata a sinistra. «Compatto» mostra una piccola immagine accanto al nome e la descrizione sotto.]]></it>
+            <pl><![CDATA[Wybierz układ karty autora. W układzie „Obraz u góry – tekst wyrównany do lewej” obraz, nazwa autora i dodatkowe informacje pozostają wyśrodkowane; tylko opis jest wyrównany do lewej. Układ „Kompaktowy” wyświetla mały obraz obok nazwy autora, a opis poniżej.]]></pl>
+        </locale>
+
+        <locale name="brick.author.layout.compact" context="administration">
+            <de><![CDATA[Kompakt]]></de>
+            <en><![CDATA[Compact]]></en>
+            <es><![CDATA[Compacto]]></es>
+            <pt><![CDATA[Compacto]]></pt>
+            <fr><![CDATA[Compact]]></fr>
+            <it><![CDATA[Compatto]]></it>
+            <pl><![CDATA[Kompaktowy]]></pl>
+        </locale>
+
+        <locale name="brick.author.initialsBackground" context="administration">
+            <de><![CDATA[Hintergrundfarbe der Initialen]]></de>
+            <en><![CDATA[Initials background colour]]></en>
+            <es><![CDATA[Color de fondo de las iniciales]]></es>
+            <pt><![CDATA[Cor de fundo das iniciais]]></pt>
+            <fr><![CDATA[Couleur de fond des initiales]]></fr>
+            <it><![CDATA[Colore di sfondo delle iniziali]]></it>
+            <pl><![CDATA[Kolor tła inicjałów]]></pl>
+        </locale>
+
+        <locale name="brick.author.initialsColor" context="administration">
+            <de><![CDATA[Schriftfarbe der Initialen]]></de>
+            <en><![CDATA[Initials text colour]]></en>
+            <es><![CDATA[Color del texto de las iniciales]]></es>
+            <pt><![CDATA[Cor do texto das iniciais]]></pt>
+            <fr><![CDATA[Couleur du texte des initiales]]></fr>
+            <it><![CDATA[Colore del testo delle iniziali]]></it>
+            <pl><![CDATA[Kolor tekstu inicjałów]]></pl>
+        </locale>
+
+        <locale name="guestAuthor.avatar" context="administration">
+            <de><![CDATA[Bild des freien Gastautors]]></de>
+            <en><![CDATA[Free guest author image]]></en>
+            <es><![CDATA[Imagen del autor invitado introducido manualmente]]></es>
+            <pt><![CDATA[Imagem do autor convidado introduzido manualmente]]></pt>
+            <fr><![CDATA[Image de l’auteur invité saisi manuellement]]></fr>
+            <it><![CDATA[Immagine dell’autore ospite inserito manualmente]]></it>
+            <pl><![CDATA[Obraz autora gościnnego wprowadzonego ręcznie]]></pl>
+        </locale>
+
+        <locale name="guestAuthor.description" context="administration">
+            <de><![CDATA[Kurzbeschreibung des freien Gastautors (Klartext)]]></de>
+            <en><![CDATA[Free guest author short description (plain text)]]></en>
+            <es><![CDATA[Descripción breve del autor invitado introducido manualmente (texto sin formato)]]></es>
+            <pt><![CDATA[Descrição breve do autor convidado introduzido manualmente (texto simples)]]></pt>
+            <fr><![CDATA[Description courte de l’auteur invité saisi manuellement (texte brut)]]></fr>
+            <it><![CDATA[Breve descrizione dell’autore ospite inserito manualmente (testo semplice)]]></it>
+            <pl><![CDATA[Krótki opis autora gościnnego wprowadzonego ręcznie (zwykły tekst)]]></pl>
+        </locale>
+
+        <locale name="guestAuthor.additionalInfo" context="administration">
+            <de><![CDATA[Zusatzinfo des freien Gastautors]]></de>
+            <en><![CDATA[Free guest author additional information]]></en>
+            <es><![CDATA[Información adicional del autor invitado introducido manualmente]]></es>
+            <pt><![CDATA[Informações adicionais sobre o autor convidado introduzido manualmente]]></pt>
+            <fr><![CDATA[Informations complémentaires sur l’auteur invité saisi manuellement]]></fr>
+            <it><![CDATA[Informazioni aggiuntive sull’autore ospite inserito manualmente]]></it>
+            <pl><![CDATA[Dodatkowe informacje o autorze gościnnym wprowadzonym ręcznie]]></pl>
         </locale>
 
         <!-- guest author -->
-        <locale name="site.settings.entry.guestAuthor.title">
+        <locale name="site.settings.entry.guestAuthor.title" context="administration">
             <de><![CDATA[Blog: Gastautor]]></de>
             <en><![CDATA[Blog: Guest author]]></en>
             <es><![CDATA[Blog: autor invitado]]></es>
@@ -166,7 +252,7 @@
             <it><![CDATA[Blog: autore ospite]]></it>
             <pl><![CDATA[Blog: autor gościnny]]></pl>
         </locale>
-        <locale name="site.settings.entry.guestAuthor.enable">
+        <locale name="site.settings.entry.guestAuthor.enable" context="administration">
             <de><![CDATA[Gastautor aktivieren]]></de>
             <en><![CDATA[Enable guest author]]></en>
             <es><![CDATA[Activar autor invitado]]></es>
@@ -175,7 +261,7 @@
             <it><![CDATA[Attiva autore ospite]]></it>
             <pl><![CDATA[Włącz autora gościnnego]]></pl>
         </locale>
-        <locale name="site.settings.entry.guestAuthor.enable.description">
+        <locale name="site.settings.entry.guestAuthor.enable.description" context="administration">
             <de><![CDATA[Wenn die Option aktiviert ist, wird der Gastautor als der Blogeintrag-Autor angezeigt.]]></de>
             <en><![CDATA[If the option is enabled, the guest author will be displayed as the blog entry author.]]></en>
             <es><![CDATA[Si esta opción está activada, el autor invitado se mostrará como autor de la entrada del blog.]]></es>
@@ -184,7 +270,7 @@
             <it><![CDATA[Se questa opzione è attiva, l'autore ospite verrà mostrato come autore dell'articolo del blog.]]></it>
             <pl><![CDATA[Po włączeniu tej opcji autor gościnny będzie wyświetlany jako autor wpisu na blogu.]]></pl>
         </locale>
-        <locale name="site.settings.entry.guestAuthor.quiqqerUser">
+        <locale name="site.settings.entry.guestAuthor.quiqqerUser" context="administration">
             <de><![CDATA[Benutzer]]></de>
             <en><![CDATA[User]]></en>
             <es><![CDATA[Usuario]]></es>
@@ -193,7 +279,7 @@
             <it><![CDATA[Utente]]></it>
             <pl><![CDATA[Użytkownik]]></pl>
         </locale>
-        <locale name="site.settings.entry.guestAuthor.quiqqerUser.description">
+        <locale name="site.settings.entry.guestAuthor.quiqqerUser.description" context="administration">
             <de><![CDATA[Falls kein Benutzer im System existiert, fülle bitte das Feld „Name“ unten aus.]]></de>
             <en><![CDATA[If no user exists in the system, please fill in the "Name" field below.]]></en>
             <es><![CDATA[Si el autor no tiene una cuenta de usuario en el sistema, rellene el campo «Nombre» de abajo.]]></es>
@@ -202,7 +288,7 @@
             <it><![CDATA[Se l'autore non ha un account utente nel sistema, compila il campo «Nome» qui sotto.]]></it>
             <pl><![CDATA[Jeśli autor nie ma konta użytkownika w systemie, wypełnij pole „Imię i nazwisko” poniżej.]]></pl>
         </locale>
-        <locale name="site.settings.entry.guestAuthor.name">
+        <locale name="site.settings.entry.guestAuthor.name" context="administration">
             <de><![CDATA[Name]]></de>
             <en><![CDATA[Name]]></en>
             <es><![CDATA[Nombre]]></es>
@@ -223,7 +309,7 @@
 
     </groups>
     <groups name="quiqqer/blog" datatype="php">
-        <locale name="admin.types.blog.list">
+        <locale name="admin.types.blog.list" context="administration">
             <de><![CDATA[Blogliste]]></de>
             <en><![CDATA[Blog List]]></en>
             <es><![CDATA[Lista de entradas del blog]]></es>
@@ -241,7 +327,7 @@
             <it><![CDATA[Elenco degli articoli del blog]]></it>
             <pl><![CDATA[Lista wpisów na blogu]]></pl>
         </locale>
-        <locale name="admin.types.blog.entry">
+        <locale name="admin.types.blog.entry" context="administration">
             <de><![CDATA[Blogeintrag]]></de>
             <en><![CDATA[Blog Entry]]></en>
             <es><![CDATA[Entrada de blog]]></es>
@@ -250,7 +336,7 @@
             <it><![CDATA[Articolo del blog]]></it>
             <pl><![CDATA[Wpis na blogu]]></pl>
         </locale>
-        <locale name="admin.types.blog.entry.desc">
+        <locale name="admin.types.blog.entry.desc" context="administration">
             <de><![CDATA[Blogeintrag]]></de>
             <en><![CDATA[Blog Entry]]></en>
             <es><![CDATA[Entrada de blog]]></es>
@@ -261,7 +347,7 @@
         </locale>
 
         <!-- Blog list settings -->
-        <locale name="quiqqer.blog.list.settings.title">
+        <locale name="quiqqer.blog.list.settings.title" context="administration">
             <de><![CDATA[Bloglisten-Einstellungen]]></de>
             <en><![CDATA[Blog list settings]]></en>
             <es><![CDATA[Configuración de la lista de entradas del blog]]></es>
@@ -272,7 +358,7 @@
         </locale>
 
         <!-- max site -->
-        <locale name="quiqqer.blog.list.settings.max">
+        <locale name="quiqqer.blog.list.settings.max" context="administration">
             <de><![CDATA[Anzahl Blogbeiträge pro Seite]]></de>
             <en><![CDATA[Number of blog posts per page]]></en>
             <es><![CDATA[Número de entradas del blog por página]]></es>
@@ -283,7 +369,7 @@
         </locale>
 
         <!-- hide page content on sub pages (if sheet / pagination active) -->
-        <locale name="quiqqer.settings.blog.hidePageContentIfPaginationActive">
+        <locale name="quiqqer.settings.blog.hidePageContentIfPaginationActive" context="administration">
             <de><![CDATA[Seiteninhalt nur auf der ersten Seite anzeigen]]></de>
             <en><![CDATA[Display page content only on the first page]]></en>
             <es><![CDATA[Mostrar el contenido de la página solo en la primera página]]></es>
@@ -292,7 +378,7 @@
             <it><![CDATA[Mostra il contenuto della pagina solo nella prima pagina]]></it>
             <pl><![CDATA[Wyświetlaj treść strony tylko na pierwszej stronie]]></pl>
         </locale>
-        <locale name="quiqqer.settings.blog.hidePageContentIfPaginationActive.desc">
+        <locale name="quiqqer.settings.blog.hidePageContentIfPaginationActive.desc" context="administration">
             <de><![CDATA[Der Inhalt der Seite wird nur auf der ersten Seite angezeigt. Auf weiteren Seiten mit Blogeinträgen wird der Inhalt ausgeblendet. Die Einstellung ist dann empfehlenswert, wenn der Inhalt relativ lang ist.]]></de>
             <en><![CDATA[The content of the page is only displayed on the first page. On further pages with blog entries the content is hidden. This setting is recommended if the content is relatively long.]]></en>
             <es><![CDATA[El contenido de la página solo se muestra en la primera página de la lista del blog. En las páginas siguientes se oculta. Esta opción es recomendable si el contenido es largo.]]></es>
@@ -303,7 +389,7 @@
         </locale>
 
         <!-- date and author -->
-        <locale name="quiqqer.settings.blog.entry.dateAndCreator">
+        <locale name="quiqqer.settings.blog.entry.dateAndCreator" context="administration">
             <de><![CDATA[Autor und Datum]]></de>
             <en><![CDATA[Author & date]]></en>
             <es><![CDATA[Autor y fecha]]></es>
@@ -312,7 +398,7 @@
             <it><![CDATA[Autore e data]]></it>
             <pl><![CDATA[Autor i data]]></pl>
         </locale>
-        <locale name="quiqqer.settings.blog.entry.dateAndCreator.default">
+        <locale name="quiqqer.settings.blog.entry.dateAndCreator.default" context="administration">
             <de><![CDATA[Standardeinstellung übernehmen]]></de>
             <en><![CDATA[Use default setting]]></en>
             <es><![CDATA[Usar la configuración predeterminada]]></es>
@@ -321,7 +407,7 @@
             <it><![CDATA[Usa l'impostazione predefinita]]></it>
             <pl><![CDATA[Zastosuj ustawienie domyślne]]></pl>
         </locale>
-        <locale name="quiqqer.settings.blog.entry.dateAndCreator.showAll">
+        <locale name="quiqqer.settings.blog.entry.dateAndCreator.showAll" context="administration">
             <de><![CDATA[Autor und Datum anzeigen]]></de>
             <en><![CDATA[Show author & date]]></en>
             <es><![CDATA[Mostrar autor y fecha]]></es>
@@ -330,7 +416,7 @@
             <it><![CDATA[Mostra autore e data]]></it>
             <pl><![CDATA[Pokaż autora i datę]]></pl>
         </locale>
-        <locale name="quiqqer.settings.blog.entry.dateAndCreator.showCreator">
+        <locale name="quiqqer.settings.blog.entry.dateAndCreator.showCreator" context="administration">
             <de><![CDATA[Nur Autor anzeigen]]></de>
             <en><![CDATA[Show only author]]></en>
             <es><![CDATA[Mostrar solo el autor]]></es>
@@ -339,7 +425,7 @@
             <it><![CDATA[Mostra solo l'autore]]></it>
             <pl><![CDATA[Pokaż tylko autora]]></pl>
         </locale>
-        <locale name="quiqqer.settings.blog.entry.dateAndCreator.showDate">
+        <locale name="quiqqer.settings.blog.entry.dateAndCreator.showDate" context="administration">
             <de><![CDATA[Nur Datum anzeigen]]></de>
             <en><![CDATA[Show only date]]></en>
             <es><![CDATA[Mostrar solo la fecha]]></es>
@@ -348,7 +434,7 @@
             <it><![CDATA[Mostra solo la data]]></it>
             <pl><![CDATA[Pokaż tylko datę]]></pl>
         </locale>
-        <locale name="quiqqer.settings.blog.entry.dateAndCreator.hide">
+        <locale name="quiqqer.settings.blog.entry.dateAndCreator.hide" context="administration">
             <de><![CDATA[Ausgeblendet]]></de>
             <en><![CDATA[Hidden]]></en>
             <es><![CDATA[Oculto]]></es>
@@ -359,7 +445,7 @@
         </locale>
 
         <!-- sites to display -->
-        <locale name="list.template.sitesToDisplay">
+        <locale name="list.template.sitesToDisplay" context="administration">
             <de><![CDATA[Welche Seiten sollen aufgelistet werden?]]></de>
             <en><![CDATA[Which pages should be listed?]]></en>
             <es><![CDATA[¿Qué páginas deben mostrarse en la lista?]]></es>
@@ -368,7 +454,7 @@
             <it><![CDATA[Quali pagine devono essere elencate?]]></it>
             <pl><![CDATA[Które strony mają być wyświetlane na liście?]]></pl>
         </locale>
-        <locale name="list.template.sitesToDisplay.children">
+        <locale name="list.template.sitesToDisplay.children" context="administration">
             <de><![CDATA[Nur untergeordnete Seiten auflisten]]></de>
             <en><![CDATA[List child pages only]]></en>
             <es><![CDATA[Mostrar solo las páginas subordinadas]]></es>
@@ -377,7 +463,7 @@
             <it><![CDATA[Elenca solo le pagine figlie]]></it>
             <pl><![CDATA[Wyświetl tylko strony podrzędne]]></pl>
         </locale>
-        <locale name="list.template.sitesToDisplay.all">
+        <locale name="list.template.sitesToDisplay.all" context="administration">
             <de><![CDATA[Alle Blogbeiträge aus diesem Projekt auflisten]]></de>
             <en><![CDATA[List all blog entries from this project]]></en>
             <es><![CDATA[Mostrar todas las entradas del blog de este proyecto]]></es>
@@ -388,7 +474,7 @@
         </locale>
 
         <!-- Blog template -->
-        <locale name="list.template">
+        <locale name="list.template" context="administration">
             <de><![CDATA[Layout]]></de>
             <en><![CDATA[Layout]]></en>
             <es><![CDATA[Diseño]]></es>
@@ -447,7 +533,7 @@
             <it><![CDATA[leggi di più]]></it>
             <pl><![CDATA[czytaj dalej]]></pl>
         </locale>
-        <locale name="entry.blog.by">
+        <locale name="entry.blog.by" context="frontend">
             <de><![CDATA[von]]></de>
             <en><![CDATA[by]]></en>
             <es><![CDATA[por]]></es>
@@ -456,7 +542,7 @@
             <it><![CDATA[di]]></it>
             <pl><![CDATA[Autor:]]></pl>
         </locale>
-        <locale name="entry.blog.on">
+        <locale name="entry.blog.on" context="frontend">
             <de><![CDATA[am]]></de>
             <en><![CDATA[on]]></en>
             <es><![CDATA[el]]></es>
@@ -530,7 +616,7 @@
         </locale>
 
         <!-- blog entry settings -->
-        <locale name="quiqqer.blog.entry.settings.title">
+        <locale name="quiqqer.blog.entry.settings.title" context="administration">
             <de><![CDATA[Blogeintrag-Einstellungen]]></de>
             <en><![CDATA[Blog entry settings]]></en>
             <es><![CDATA[Configuración de la entrada del blog]]></es>
@@ -539,7 +625,7 @@
             <it><![CDATA[Impostazioni dell'articolo del blog]]></it>
             <pl><![CDATA[Ustawienia wpisu na blogu]]></pl>
         </locale>
-        <locale name="quiqqer.settings.blog.entry.comments">
+        <locale name="quiqqer.settings.blog.entry.comments" context="administration">
             <de><![CDATA[Kommentare]]></de>
             <en><![CDATA[Comments]]></en>
             <es><![CDATA[Comentarios]]></es>
@@ -548,7 +634,7 @@
             <it><![CDATA[Commenti]]></it>
             <pl><![CDATA[Komentarze]]></pl>
         </locale>
-        <locale name="quiqqer.settings.blog.entry.comments.enable">
+        <locale name="quiqqer.settings.blog.entry.comments.enable" context="administration">
             <de><![CDATA[Einschalten]]></de>
             <en><![CDATA[Enable]]></en>
             <es><![CDATA[Activar]]></es>
@@ -557,7 +643,7 @@
             <it><![CDATA[Attiva]]></it>
             <pl><![CDATA[Włącz]]></pl>
         </locale>
-        <locale name="quiqqer.settings.blog.entry.comments.disable">
+        <locale name="quiqqer.settings.blog.entry.comments.disable" context="administration">
             <de><![CDATA[Ausschalten]]></de>
             <en><![CDATA[Disable]]></en>
             <es><![CDATA[Desactivar]]></es>
@@ -567,7 +653,7 @@
             <pl><![CDATA[Wyłącz]]></pl>
         </locale>
 
-        <locale name="quiqqer.settings.blog.entry.dateAndCreator">
+        <locale name="quiqqer.settings.blog.entry.dateAndCreator" context="administration">
             <de><![CDATA[Autor und Datum]]></de>
             <en><![CDATA[Author & date]]></en>
             <es><![CDATA[Autor y fecha]]></es>
@@ -576,7 +662,7 @@
             <it><![CDATA[Autore e data]]></it>
             <pl><![CDATA[Autor i data]]></pl>
         </locale>
-        <locale name="quiqqer.settings.blog.entry.dateAndCreator.default">
+        <locale name="quiqqer.settings.blog.entry.dateAndCreator.default" context="administration">
             <de><![CDATA[Standardeinstellung übernehmen]]></de>
             <en><![CDATA[Use default setting]]></en>
             <es><![CDATA[Usar la configuración predeterminada]]></es>
@@ -585,7 +671,7 @@
             <it><![CDATA[Usa l'impostazione predefinita]]></it>
             <pl><![CDATA[Zastosuj ustawienie domyślne]]></pl>
         </locale>
-        <locale name="quiqqer.settings.blog.entry.dateAndCreator.showAll">
+        <locale name="quiqqer.settings.blog.entry.dateAndCreator.showAll" context="administration">
             <de><![CDATA[Autor und Datum anzeigen]]></de>
             <en><![CDATA[Show author & date]]></en>
             <es><![CDATA[Mostrar autor y fecha]]></es>
@@ -594,7 +680,7 @@
             <it><![CDATA[Mostra autore e data]]></it>
             <pl><![CDATA[Pokaż autora i datę]]></pl>
         </locale>
-        <locale name="quiqqer.settings.blog.entry.dateAndCreator.showCreator">
+        <locale name="quiqqer.settings.blog.entry.dateAndCreator.showCreator" context="administration">
             <de><![CDATA[Nur Autor anzeigen]]></de>
             <en><![CDATA[Show only author]]></en>
             <es><![CDATA[Mostrar solo el autor]]></es>
@@ -603,7 +689,7 @@
             <it><![CDATA[Mostra solo l'autore]]></it>
             <pl><![CDATA[Pokaż tylko autora]]></pl>
         </locale>
-        <locale name="quiqqer.settings.blog.entry.dateAndCreator.showDate">
+        <locale name="quiqqer.settings.blog.entry.dateAndCreator.showDate" context="administration">
             <de><![CDATA[Nur Datum anzeigen]]></de>
             <en><![CDATA[Show only date]]></en>
             <es><![CDATA[Mostrar solo la fecha]]></es>
@@ -612,7 +698,7 @@
             <it><![CDATA[Mostra solo la data]]></it>
             <pl><![CDATA[Pokaż tylko datę]]></pl>
         </locale>
-        <locale name="quiqqer.settings.blog.entry.dateAndCreator.hide">
+        <locale name="quiqqer.settings.blog.entry.dateAndCreator.hide" context="administration">
             <de><![CDATA[Ausgeblendet]]></de>
             <en><![CDATA[Hidden]]></en>
             <es><![CDATA[Oculto]]></es>
@@ -621,7 +707,7 @@
             <it><![CDATA[Nascosto]]></it>
             <pl><![CDATA[Ukryte]]></pl>
         </locale>
-        <locale name="quiqqer.settings.blog.pinned">
+        <locale name="quiqqer.settings.blog.pinned" context="administration">
             <de><![CDATA[Angeheftet]]></de>
             <en><![CDATA[Pinned]]></en>
             <es><![CDATA[Fijado]]></es>
@@ -630,7 +716,7 @@
             <it><![CDATA[In evidenza]]></it>
             <pl><![CDATA[Przypięty]]></pl>
         </locale>
-        <locale name="quiqqer.settings.blog.pinned.description">
+        <locale name="quiqqer.settings.blog.pinned.description" context="administration">
             <de><![CDATA[Angeheftete Einträge werden in Bloglisten vor normalen Einträgen angezeigt.]]></de>
             <en><![CDATA[Pinned entries are displayed before regular entries in blog lists.]]></en>
             <es><![CDATA[Las entradas fijadas se muestran antes que las demás en las listas del blog.]]></es>
@@ -641,7 +727,7 @@
         </locale>
 
         <!-- project blog comment settings -->
-        <locale name="blog.settings.category">
+        <locale name="blog.settings.category" context="administration">
             <de><![CDATA[Blog-Kommentare]]></de>
             <en><![CDATA[Blog comments]]></en>
             <es><![CDATA[Comentarios del blog]]></es>
@@ -652,7 +738,7 @@
         </locale>
 
         <!-- project blog comment settings: general -->
-        <locale name="blog.settings.general.title">
+        <locale name="blog.settings.general.title" context="administration">
             <de><![CDATA[Allgemeine Einstellungen]]></de>
             <en><![CDATA[General settings]]></en>
             <es><![CDATA[Configuración general]]></es>
@@ -661,7 +747,7 @@
             <it><![CDATA[Impostazioni generali]]></it>
             <pl><![CDATA[Ustawienia ogólne]]></pl>
         </locale>
-        <locale name="blog.settings.general.enableComments">
+        <locale name="blog.settings.general.enableComments" context="administration">
             <de><![CDATA[Kommentarfunktion einschalten?]]></de>
             <en><![CDATA[Enable comments?]]></en>
             <es><![CDATA[¿Activar los comentarios?]]></es>
@@ -671,7 +757,7 @@
             <pl><![CDATA[Włączyć komentarze?]]></pl>
         </locale>
 
-        <locale name="blog.settings.general.type">
+        <locale name="blog.settings.general.type" context="administration">
             <de><![CDATA[Typ]]></de>
             <en><![CDATA[Type]]></en>
             <es><![CDATA[Tipo]]></es>
@@ -680,7 +766,7 @@
             <it><![CDATA[Tipo]]></it>
             <pl><![CDATA[Typ]]></pl>
         </locale>
-        <locale name="blog.settings.general.type.disqus">
+        <locale name="blog.settings.general.type.disqus" context="administration">
             <de><![CDATA[Disqus]]></de>
             <en><![CDATA[Disqus]]></en>
             <es><![CDATA[Disqus]]></es>
@@ -689,7 +775,7 @@
             <it><![CDATA[Disqus]]></it>
             <pl><![CDATA[Disqus]]></pl>
         </locale>
-        <locale name="blog.settings.general.type.facebook">
+        <locale name="blog.settings.general.type.facebook" context="administration">
             <de><![CDATA[Facebook]]></de>
             <en><![CDATA[Facebook]]></en>
             <es><![CDATA[Facebook]]></es>
@@ -700,7 +786,7 @@
         </locale>
 
         <!-- project blog comment settings: disqus -->
-        <locale name="blog.settings.disqus.title">
+        <locale name="blog.settings.disqus.title" context="administration">
             <de><![CDATA[Disqus]]></de>
             <en><![CDATA[Disqus]]></en>
             <es><![CDATA[Disqus]]></es>
@@ -709,7 +795,7 @@
             <it><![CDATA[Disqus]]></it>
             <pl><![CDATA[Disqus]]></pl>
         </locale>
-        <locale name="blog.settings.disqus.link">
+        <locale name="blog.settings.disqus.link" context="administration">
             <de><![CDATA[Disqus Link]]></de>
             <en><![CDATA[Disqus link]]></en>
             <es><![CDATA[Enlace de Disqus]]></es>
@@ -718,7 +804,7 @@
             <it><![CDATA[Link di Disqus]]></it>
             <pl><![CDATA[Link do Disqus]]></pl>
         </locale>
-        <locale name="blog.settings.disqus.link.desc" html="true">
+        <locale name="blog.settings.disqus.link.desc" context="administration" html="true">
             <de><![CDATA[
             Registrieren Sie sich bei Disqus und fügen Sie hier Ihren persönlichen Link ein. <br />
             https://disqus.com
@@ -733,7 +819,7 @@
         </locale>
 
         <!-- project blog comment settings: facebook -->
-        <locale name="blog.settings.facebook.title">
+        <locale name="blog.settings.facebook.title" context="administration">
             <de><![CDATA[Facebook]]></de>
             <en><![CDATA[Facebook]]></en>
             <es><![CDATA[Facebook]]></es>
@@ -742,7 +828,7 @@
             <it><![CDATA[Facebook]]></it>
             <pl><![CDATA[Facebook]]></pl>
         </locale>
-        <locale name="blog.settings.facebook.appId">
+        <locale name="blog.settings.facebook.appId" context="administration">
             <de><![CDATA[Facebook App ID]]></de>
             <en><![CDATA[Facebook App ID]]></en>
             <es><![CDATA[ID de la aplicación de Facebook]]></es>
@@ -751,7 +837,7 @@
             <it><![CDATA[ID dell'app di Facebook]]></it>
             <pl><![CDATA[Identyfikator aplikacji Facebook]]></pl>
         </locale>
-        <locale name="blog.settings.facebook.appId.desc" html="true">
+        <locale name="blog.settings.facebook.appId.desc" context="administration" html="true">
             <de><![CDATA[
             Registrieren Sie sich bei Facebook Developers, erstellen Sie eine neue App und
             fügen Sie hier die App ID ein.<br />
@@ -766,7 +852,7 @@
             <pl><![CDATA[Zarejestruj się w portalu Facebook Developers, utwórz nową aplikację i wklej tutaj jej identyfikator.<br /> https://developers.facebook.com]]></pl>
         </locale>
 
-        <locale name="blog.settings.facebook.numberOfPosts">
+        <locale name="blog.settings.facebook.numberOfPosts" context="administration">
             <de><![CDATA[Anzahl der Kommentare]]></de>
             <en><![CDATA[Number of comments]]></en>
             <es><![CDATA[Número de comentarios]]></es>
@@ -778,7 +864,7 @@
 
 
 
-        <locale name="blog.settings.entries">
+        <locale name="blog.settings.entries" context="administration">
             <de><![CDATA[Blog-Einträge]]></de>
             <en><![CDATA[Blog entries]]></en>
             <es><![CDATA[Entradas del blog]]></es>
@@ -788,7 +874,7 @@
             <pl><![CDATA[Wpisy na blogu]]></pl>
         </locale>
 
-        <locale name="blog.settings.entries.more.title">
+        <locale name="blog.settings.entries.more.title" context="administration">
             <de><![CDATA[Weitere Blog-Einträge]]></de>
             <en><![CDATA[More blog entries]]></en>
             <es><![CDATA[Más entradas del blog]]></es>
@@ -798,7 +884,7 @@
             <pl><![CDATA[Więcej wpisów na blogu]]></pl>
         </locale>
 
-        <locale name="blog.settings.entries.more.disabled.text">
+        <locale name="blog.settings.entries.more.disabled.text" context="administration">
             <de><![CDATA[Keine weiteren Blog-Einträge anzeigen]]></de>
             <en><![CDATA[Don't show more blog entries]]></en>
             <es><![CDATA[No mostrar más entradas del blog]]></es>
@@ -807,7 +893,7 @@
             <it><![CDATA[Non mostrare altri articoli del blog]]></it>
             <pl><![CDATA[Nie pokazuj innych wpisów na blogu]]></pl>
         </locale>
-        <locale name="blog.settings.entries.more.disabled.description">
+        <locale name="blog.settings.entries.more.disabled.description" context="administration">
             <de><![CDATA[Es wird keine Navigation für weitere Blog-Einträge unter diesem Blog-Eintrag angezeigt.]]></de>
             <en><![CDATA[No navigation to other blog entries will be shown below this blog entry.]]></en>
             <es><![CDATA[No se mostrará la navegación a otras entradas debajo de esta entrada del blog.]]></es>
@@ -817,7 +903,7 @@
             <pl><![CDATA[Pod tym wpisem nie będzie wyświetlana nawigacja do innych wpisów na blogu.]]></pl>
         </locale>
 
-        <locale name="blog.settings.entry.title">
+        <locale name="blog.settings.entry.title" context="administration">
             <de><![CDATA[Blog-Eintrag]]></de>
             <en><![CDATA[Blog entry]]></en>
             <es><![CDATA[Entrada de blog]]></es>
@@ -826,7 +912,7 @@
             <it><![CDATA[Articolo del blog]]></it>
             <pl><![CDATA[Wpis na blogu]]></pl>
         </locale>
-        <locale name="blog.settings.entry.showCreator.text">
+        <locale name="blog.settings.entry.showCreator.text" context="administration">
             <de><![CDATA[Autor anzeigen]]></de>
             <en><![CDATA[Show author]]></en>
             <es><![CDATA[Mostrar autor]]></es>
@@ -835,7 +921,7 @@
             <it><![CDATA[Mostra autore]]></it>
             <pl><![CDATA[Pokaż autora]]></pl>
         </locale>
-        <locale name="blog.settings.entry.showDate.text">
+        <locale name="blog.settings.entry.showDate.text" context="administration">
             <de><![CDATA[Datum anzeigen]]></de>
             <en><![CDATA[Show date]]></en>
             <es><![CDATA[Mostrar fecha]]></es>
@@ -844,7 +930,7 @@
             <it><![CDATA[Mostra data]]></it>
             <pl><![CDATA[Pokaż datę]]></pl>
         </locale>
-        <locale name="blog.settings.entry.showTitle.text">
+        <locale name="blog.settings.entry.showTitle.text" context="administration">
             <de><![CDATA[Titel anzeigen]]></de>
             <en><![CDATA[Show title]]></en>
             <es><![CDATA[Mostrar título]]></es>
@@ -853,7 +939,7 @@
             <it><![CDATA[Mostra titolo]]></it>
             <pl><![CDATA[Pokaż tytuł]]></pl>
         </locale>
-        <locale name="blog.settings.entry.showDescription.text">
+        <locale name="blog.settings.entry.showDescription.text" context="administration">
             <de><![CDATA[Kurzbeschreibung anzeigen]]></de>
             <en><![CDATA[Show short description]]></en>
             <es><![CDATA[Mostrar descripción breve]]></es>
@@ -863,7 +949,7 @@
             <pl><![CDATA[Pokaż krótki opis]]></pl>
         </locale>
 
-        <locale name="blog.settings.entries.more.amount.text">
+        <locale name="blog.settings.entries.more.amount.text" context="administration">
             <de><![CDATA[Anzahl weiterer Blog-Einträge]]></de>
             <en><![CDATA[Number of additional blog entries]]></en>
             <es><![CDATA[Número de entradas adicionales del blog]]></es>
@@ -872,7 +958,7 @@
             <it><![CDATA[Numero di articoli aggiuntivi del blog]]></it>
             <pl><![CDATA[Liczba dodatkowych wpisów na blogu]]></pl>
         </locale>
-        <locale name="blog.settings.entries.more.amount.description">
+        <locale name="blog.settings.entries.more.amount.description" context="administration">
             <de><![CDATA[Die Anzahl vorheriger und nachfolgender Blog-Einträge, die unten auf der Seite angezeigt werden, jeweils pro Richtung.]]></de>
             <en><![CDATA[The number of entries before and after the current blog entry to display at the bottom of the page, in each direction.]]></en>
             <es><![CDATA[Número de entradas anteriores y siguientes a la entrada actual que se muestran al final de la página, para cada dirección.]]></es>
@@ -882,7 +968,7 @@
             <pl><![CDATA[Liczba wcześniejszych i późniejszych wpisów względem bieżącego wpisu, wyświetlanych na dole strony, osobno dla każdego kierunku.]]></pl>
         </locale>
 
-        <locale name="blog.settings.entries.more.show_creator.text">
+        <locale name="blog.settings.entries.more.show_creator.text" context="administration">
             <de><![CDATA[Autor anzeigen]]></de>
             <en><![CDATA[Show author]]></en>
             <es><![CDATA[Mostrar autor]]></es>
@@ -892,7 +978,7 @@
             <pl><![CDATA[Pokaż autora]]></pl>
         </locale>
 
-        <locale name="blog.settings.entries.more.show_date.text">
+        <locale name="blog.settings.entries.more.show_date.text" context="administration">
             <de><![CDATA[Datum vor dem Blog-Eintrag anzeigen]]></de>
             <en><![CDATA[Show date before the blog entry]]></en>
             <es><![CDATA[Mostrar la fecha antes de la entrada del blog]]></es>
@@ -902,7 +988,7 @@
             <pl><![CDATA[Pokaż datę przed wpisem na blogu]]></pl>
         </locale>
 
-        <locale name="blog.settings.entries.more.show_time.text">
+        <locale name="blog.settings.entries.more.show_time.text" context="administration">
             <de><![CDATA[Uhrzeit vor dem Blog-Eintrag anzeigen]]></de>
             <en><![CDATA[Show time before the blog entry]]></en>
             <es><![CDATA[Mostrar la hora antes de la entrada del blog]]></es>
@@ -912,7 +998,7 @@
             <pl><![CDATA[Pokaż godzinę przed wpisem na blogu]]></pl>
         </locale>
 
-        <locale name="blog.entries.more.nav.title">
+        <locale name="blog.entries.more.nav.title" context="frontend">
             <de><![CDATA[Weitere Blog-Einträge:]]></de>
             <en><![CDATA[More blog entries:]]></en>
             <es><![CDATA[Más entradas del blog:]]></es>
@@ -923,3 +1009,4 @@
         </locale>
     </groups>
 </locales>
+</quiqqer>

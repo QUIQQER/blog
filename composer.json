@@ -19,7 +19,9 @@
     },
     "require": {
         "php": "^8.2",
-        "quiqqer/core": "^2.30",
+        "quiqqer/core": "^2.41",
+        "quiqqer/qui": "^1.15.1",
+        "quiqqer/bricks": "^2.42.1",
         "quiqqer/sitetypes": "^2.10.0",
         "quiqqer/controls": "^2.4"
     },

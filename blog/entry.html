@@ -15,7 +15,7 @@
     <section class="quiqqer-blog-entry__meta">
         {if $author && $showCreator}
             {t}quiqqer/blog entry.blog.by{/t}
-            <span class="quiqqer-blog-entry__author">{$author}</span>
+            <span class="quiqqer-blog-entry__author">{$author|escape:'html'}</span>
         {/if}
 
         {if $showDate}

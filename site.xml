@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<quiqqer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="https://www.quiqqer.com/docs/schemas/2.x/site.xsd">
 <site>
 
     <types>
@@ -337,6 +339,8 @@
                 <attribute>quiqqer.settings.blog.guestAuthor.quiqqerUser</attribute>
                 <attribute>quiqqer.settings.blog.guestAuthor.name</attribute>
                 <attribute>quiqqer.settings.blog.guestAuthor.avatar</attribute>
+                <attribute>quiqqer.settings.blog.guestAuthor.description</attribute>
+                <attribute>quiqqer.settings.blog.guestAuthor.additionalInfo</attribute>
             </attributes>
 
             <settings>
@@ -439,13 +443,23 @@
                                 <locale group="quiqqer/blog" var="site.settings.entry.guestAuthor.name" />
                             </text>
                         </input>
-<!-- todo @michael.daniel -->
-<!--                        <input conf="quiqqer.settings.blog.guestAuthor.avatar" type="text" class="media-image">-->
-<!--                            <text>-->
-<!--                                <locale group="quiqqer/blog" var="site.settings.entry.guestAuthor.avatar" />-->
-<!--                            </text>-->
-<!--                        </input>-->
+                        <input conf="quiqqer.settings.blog.guestAuthor.avatar" type="text" class="media-image">
+                            <text>
+                                <locale group="quiqqer/blog" var="guestAuthor.avatar"/>
+                            </text>
+                        </input>
 
+                        <textarea conf="quiqqer.settings.blog.guestAuthor.description">
+                            <text>
+                                <locale group="quiqqer/blog" var="guestAuthor.description"/>
+                            </text>
+                        </textarea>
+
+                        <input conf="quiqqer.settings.blog.guestAuthor.additionalInfo" type="text">
+                            <text>
+                                <locale group="quiqqer/blog" var="guestAuthor.additionalInfo"/>
+                            </text>
+                        </input>
                     </settings>
                 </category>
             </settings>
@@ -453,3 +467,4 @@
     </types>
 
 </site>
+</quiqqer>

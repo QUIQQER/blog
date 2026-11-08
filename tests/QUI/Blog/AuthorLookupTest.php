@@ -53,6 +53,7 @@ class AuthorLookupTest extends TestCase
             }
 
             if ($type !== 'list') {
+                yield "$type: selected guest" => [$type, 'present', true];
                 yield "$type: deleted guest" => [$type, 'missing', true];
                 yield "$type: guest name" => [$type, 'guest-name', true];
             }
@@ -112,9 +113,6 @@ class AuthorLookupTest extends TestCase
             'quiqqer.settings.blog.guestAuthor.enable' => $guest,
             'quiqqer.settings.blog.guestAuthor.quiqqerUser' => $result === 'guest-name' ? '' : 'guest-uuid',
             'quiqqer.settings.blog.guestAuthor.name' => 'Guest writer',
-            'quiqqer.news.settings.guestAuthor.enable' => $guest,
-            'quiqqer.news.settings.guestAuthor.quiqqerUser' => $result === 'guest-name' ? '' : 'guest-uuid',
-            'quiqqer.news.settings.guestAuthor.name' => 'Guest writer',
             'quiqqer.settings.blog.max' => 1,
             'quiqqer.settings.blog.showCreator' => false,
             'quiqqer.settings.blog.filter' => 'disabled',
@@ -155,19 +153,23 @@ class AuthorLookupTest extends TestCase
         if ($type === 'list') {
             $article = $Page->getJsonLdNode('blog')['blogPost'][0];
         } elseif ($type === 'author') {
-            $article = ['author' => $this->assigned['authorName']];
+            $article = ['author' => $this->assigned['authorProfile']['name'] ?? null];
         } else {
             $article = $Page->getJsonLdNode('blogPosting');
         }
 
         $this->assertNotNull($article);
 
+        if ($type === 'entry') {
+            $this->assertSame($article['author']['name'] ?? null, $this->assigned['author']);
+        }
+
         if ($result === 'present' || $result === 'guest-name') {
             $expected = $result === 'present' ? 'Existing author' : 'Guest writer';
             $actual = $type === 'author' ? $article['author'] : $article['author']['name'];
             $this->assertSame($expected, $actual);
         } elseif ($type === 'author') {
-            $this->assertFalse($article['author']);
+            $this->assertNull($article['author']);
         } else {
             $this->assertArrayNotHasKey('author', $article);
         }
