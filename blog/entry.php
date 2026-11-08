@@ -125,57 +125,13 @@ if (!empty($webPageId)) {
 /**
  * Author
  */
-$quiqqerUser = $Site->getAttribute('c_user');
-$userName = null;
-$userAvatar = null;
+$authorProfile = QUI\Blog\Utils\AuthorData::resolve($Site);
+$authorName = $authorProfile['name'] ?? null;
+$Engine->assign('author', $authorName);
 
-// guest author enabled?
-if ($Site->getAttribute('quiqqer.settings.blog.guestAuthor.enable')) {
-    $guestUser = $Site->getAttribute('quiqqer.settings.blog.guestAuthor.quiqqerUser');
-    $guestName = $Site->getAttribute('quiqqer.settings.blog.guestAuthor.name');
-    $guestAvatar = $Site->getAttribute('quiqqer.settings.blog.guestAuthor.avatar');
-
-    if ($guestUser) {
-        $quiqqerUser = $guestUser;
-    } elseif ($guestName) {
-        $userName = $guestName;
-        $quiqqerUser = null;
-
-        if ($guestAvatar) {
-            $userAvatar = $guestAvatar;
-        }
-    }
+if ($authorName !== null) {
+    $BlogPosting->set('author', $authorName);
 }
-
-if ($quiqqerUser) {
-    try {
-        $User = QUI::getUsers()->get($quiqqerUser);
-        $Engine->assign('author', $User->getName());
-
-        if ($User->getName()) {
-            $BlogPosting->set('author', $User->getName());
-        }
-    } catch (QUI\Exception $Exception) {
-        if (
-            !$Exception instanceof QUI\Users\Exception
-            || $Exception->getCode() !== 404
-        ) {
-            QUI\System\Log::addInfo($Exception->getMessage(), [
-                'project' => $Project->getName(),
-                'lang' => $Project->getLang(),
-                'site' => $Site->getId()
-            ]);
-        }
-        $Engine->assign('author', null);
-    }
-} else {
-    $Engine->assign('author', $userName);
-
-    if ($userName) {
-        $BlogPosting->set('author', $userName);
-    }
-}
-
 
 // publisher
 $Publisher = new QUI\Controls\Utils\MetaList\Publisher();

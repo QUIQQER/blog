@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<quiqqer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="https://www.quiqqer.com/docs/schemas/2.x/locale.xsd">
 <locales>
     <groups name="quiqqer/blog" datatype="php,js">
         <locale name="package.title">
@@ -111,49 +113,73 @@
             <pl><![CDATA[Blog: autor]]></pl>
         </locale>
         <locale name="brick.author.description">
-            <de><![CDATA[Zeigt den Autor des Blogbeitrags. Ein Autor wird nur angezeigt, wenn der Baustein auf einer Seite vom Typ „QUIQQER - Blogeintrag“ platziert wird.]]></de>
-            <en><![CDATA[Shows the author of the blog post. An author is only displayed if the brick is placed on a page of type "QUIQQER - Blog entry".]]></en>
+            <de><![CDATA[Zeigt den Autor des aktuellen Blogeintrags als Autorenkarte. Für Inhalte und Sidebars geeignet; Gastautoren werden in den Seiteneinstellungen gepflegt.]]></de>
+            <en><![CDATA[Shows the current blog entry author as an author card. Suitable for content areas and sidebars; guest authors are maintained in the page settings.]]></en>
             <es><![CDATA[Muestra el autor de la entrada del blog. Solo se muestra un autor si el bloque se coloca en una página de tipo «QUIQQER - Entrada de blog».]]></es>
             <pt><![CDATA[Mostra o autor do artigo do blogue. Só é apresentado um autor se o bloco for colocado numa página do tipo «QUIQQER - Artigo do blogue».]]></pt>
             <fr><![CDATA[Affiche l'auteur de l'article de blog. Un auteur n'est affiché que si le bloc est placé sur une page de type « QUIQQER - Article de blog ».]]></fr>
             <it><![CDATA[Mostra l'autore dell'articolo del blog. L'autore viene visualizzato solo se il blocco è inserito in una pagina di tipo «QUIQQER - Articolo del blog».]]></it>
             <pl><![CDATA[Wyświetla autora wpisu na blogu. Autor jest widoczny tylko wtedy, gdy blok znajduje się na stronie typu „QUIQQER - Wpis na blogu”.]]></pl>
         </locale>
-        <locale name="brick.setting.author.template">
+
+        <locale name="brick.author.layout">
             <de><![CDATA[Vorlage]]></de>
-            <en><![CDATA[Template]]></en>
-            <es><![CDATA[Plantilla]]></es>
-            <pt><![CDATA[Modelo]]></pt>
-            <fr><![CDATA[Modèle]]></fr>
-            <it><![CDATA[Modello]]></it>
-            <pl><![CDATA[Szablon]]></pl>
+            <en><![CDATA[Layout]]></en>
         </locale>
-        <locale name="brick.setting.author.template.largeImageTop">
-            <de><![CDATA[Großes Bild oben]]></de>
-            <en><![CDATA[Large image on top]]></en>
-            <es><![CDATA[Imagen grande arriba]]></es>
-            <pt><![CDATA[Imagem grande em cima]]></pt>
-            <fr><![CDATA[Grande image en haut]]></fr>
-            <it><![CDATA[Immagine grande in alto]]></it>
-            <pl><![CDATA[Duży obraz u góry]]></pl>
+
+        <locale name="brick.author.layout.left">
+            <de><![CDATA[Bild links]]></de>
+            <en><![CDATA[Image on the left]]></en>
         </locale>
-        <locale name="brick.setting.author.template.largeImageLeft">
-            <de><![CDATA[Großes Bild links]]></de>
-            <en><![CDATA[Large image on left]]></en>
-            <es><![CDATA[Imagen grande a la izquierda]]></es>
-            <pt><![CDATA[Imagem grande à esquerda]]></pt>
-            <fr><![CDATA[Grande image à gauche]]></fr>
-            <it><![CDATA[Immagine grande a sinistra]]></it>
-            <pl><![CDATA[Duży obraz po lewej]]></pl>
+
+        <locale name="brick.author.layout.top">
+            <de><![CDATA[Bild oben – alles zentriert]]></de>
+            <en><![CDATA[Image on top – all centred]]></en>
         </locale>
-        <locale name="brick.setting.author.template.smallImageLeft">
-            <de><![CDATA[Kleines Bild links]]></de>
-            <en><![CDATA[Small image on left]]></en>
-            <es><![CDATA[Imagen pequeña a la izquierda]]></es>
-            <pt><![CDATA[Imagem pequena à esquerda]]></pt>
-            <fr><![CDATA[Petite image à gauche]]></fr>
-            <it><![CDATA[Immagine piccola a sinistra]]></it>
-            <pl><![CDATA[Mały obraz po lewej]]></pl>
+
+        <locale name="brick.author.layout.topLeft">
+            <de><![CDATA[Bild oben – alles linksbündig]]></de>
+            <en><![CDATA[Image on top – all left-aligned]]></en>
+        </locale>
+
+        <locale name="brick.author.layout.topTextLeft">
+            <de><![CDATA[Bild oben – Text linksbündig]]></de>
+            <en><![CDATA[Image on top – text left-aligned]]></en>
+        </locale>
+
+        <locale name="brick.author.layout.description">
+            <de><![CDATA[Wählen Sie die Anordnung der Autorenkarte. Bei „Bild oben – Text linksbündig“ bleiben Bild, Name und Zusatzinfo zentriert; nur die Beschreibung ist linksbündig. „Kompakt“ zeigt ein kleines Bild neben dem Namen und die Beschreibung darunter.]]></de>
+            <en><![CDATA[Choose the arrangement of the author card. With “Image on top – text left-aligned”, the image, name and additional information remain centred; only the description is left-aligned. “Compact” shows a small image beside the name and the description below.]]></en>
+        </locale>
+
+        <locale name="brick.author.layout.compact">
+            <de><![CDATA[Kompakt]]></de>
+            <en><![CDATA[Compact]]></en>
+        </locale>
+
+        <locale name="brick.author.initialsBackground">
+            <de><![CDATA[Hintergrundfarbe der Initialen]]></de>
+            <en><![CDATA[Initials background colour]]></en>
+        </locale>
+
+        <locale name="brick.author.initialsColor">
+            <de><![CDATA[Schriftfarbe der Initialen]]></de>
+            <en><![CDATA[Initials text colour]]></en>
+        </locale>
+
+        <locale name="guestAuthor.avatar">
+            <de><![CDATA[Bild des freien Gastautors]]></de>
+            <en><![CDATA[Free guest author image]]></en>
+        </locale>
+
+        <locale name="guestAuthor.description">
+            <de><![CDATA[Kurzbeschreibung des freien Gastautors (Klartext)]]></de>
+            <en><![CDATA[Free guest author short description (plain text)]]></en>
+        </locale>
+
+        <locale name="guestAuthor.additionalInfo">
+            <de><![CDATA[Zusatzinfo des freien Gastautors]]></de>
+            <en><![CDATA[Free guest author additional information]]></en>
         </locale>
 
         <!-- guest author -->
@@ -923,3 +949,4 @@
         </locale>
     </groups>
 </locales>
+</quiqqer>

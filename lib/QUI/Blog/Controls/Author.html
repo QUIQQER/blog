@@ -1,17 +1,23 @@
-{if $this->getAttribute('showTitle') && $this->getAttribute('frontendTitle')}
+{if $this->getAttribute('title')}
     <header class="control-header">
-        <h1>{$this->getAttribute('frontendTitle')}</h1>
+        <h2>{$this->getAttribute('title')|escape:'html'}</h2>
     </header>
 {/if}
-
-{if $this->getAttribute('content') != ""}
-    <div class="control-body">
-        {$this->getAttribute('content')}
+<div class="quiqqer-blog-controls-author__card quiqqer-blog-controls-author__card--{$authorLayout|escape:'html'}">
+    <div class="quiqqer-blog-controls-author__avatar" aria-hidden="true">
+        {if $authorAvatar !== ''}
+            <img src="{$authorAvatar|escape:'html'}" alt="" loading="lazy" decoding="async">
+        {else}
+            <strong class="quiqqer-blog-controls-author__initials">{$authorProfile.initials|escape:'html'}</strong>
+        {/if}
     </div>
-{/if}
-
-<div class="control-template">
-    {if isset($controlTemplate) && $controlTemplate}
-        {$controlTemplate}
+    <div class="quiqqer-blog-controls-author__identity">
+        <p class="quiqqer-blog-controls-author__name"><strong>{$authorProfile.name|escape:'html'}</strong></p>
+        {if $authorProfile.additionalInfo !== ''}
+            <p class="quiqqer-blog-controls-author__info text-muted">{$authorProfile.additionalInfo|escape:'html'}</p>
+        {/if}
+    </div>
+    {if $authorProfile.description !== ''}
+        <p class="quiqqer-blog-controls-author__description">{$authorProfile.description|escape:'html'}</p>
     {/if}
 </div>
