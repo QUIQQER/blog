@@ -18,6 +18,12 @@ Features
   - Blog list
   - Blog entry
 - Write blog entries as guest author
+- Author cards - Present the author of a blog entry in responsive layouts suited
+  to content areas and sidebars. Use an existing user or a guest author with a
+  name, image, short description and additional information. When no usable
+  image is available, initials are shown instead, with configurable colours
+  and support for light and dark themes. Author details are managed on the
+  blog page, so the same brick can be reused across entries.
 
 In combination with the [feed module](https://dev.quiqqer.com/quiqqer/package-feed), the blog can also be offered as RSS / Atom.
 
