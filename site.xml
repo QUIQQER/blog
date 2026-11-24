@@ -21,6 +21,8 @@
                 <attribute default="1">quiqqer.settings.blog.showCreator</attribute>
                 <attribute default="1">quiqqer.settings.blog.showDate</attribute>
                 <attribute default="0">quiqqer.settings.blog.showTime</attribute>
+                <attribute default="disabled">quiqqer.settings.blog.filter</attribute>
+                <attribute>quiqqer.settings.blog.tags</attribute>
                 <attribute default="0">quiqqer.settings.blog.hidePageContentIfPaginationActive</attribute>
 
                 <!-- card template (template = cards) -->
@@ -306,6 +308,40 @@
                                 <locale group="quiqqer/sitetypes"
                                         var="quiqqer.sitetypes.list.settings.showTime" />
                             </text>
+                        </input>
+
+                        <select conf="quiqqer.settings.blog.filter">
+                            <text>
+                                <locale group="quiqqer/sitetypes" var="quiqqer.sitetypes.list.settings.filter" />
+                            </text>
+                            <description>
+                                <locale group="quiqqer/sitetypes" var="quiqqer.sitetypes.list.settings.filter.desc" />
+                            </description>
+                            <option value="disabled">
+                                <locale group="quiqqer/sitetypes"
+                                        var="quiqqer.sitetypes.list.settings.filter.disabled" />
+                            </option>
+                            <option value="input">
+                                <locale group="quiqqer/sitetypes" var="quiqqer.sitetypes.list.settings.filter.input" />
+                            </option>
+                            <option value="tags">
+                                <locale group="quiqqer/sitetypes" var="quiqqer.sitetypes.list.settings.filter.tags" />
+                            </option>
+                            <option value="all">
+                                <locale group="quiqqer/sitetypes" var="quiqqer.sitetypes.list.settings.filter.all" />
+                            </option>
+                        </select>
+
+                        <input conf="quiqqer.settings.blog.tags"
+                               data-qui="package/quiqqer/tags/bin/tags/Select">
+                            <text>
+                                <locale group="quiqqer/sitetypes"
+                                        var="quiqqer.sitetypes.list.settings.tags" />
+                            </text>
+                            <description>
+                                <locale group="quiqqer/sitetypes"
+                                        var="quiqqer.sitetypes.list.settings.tags.desc" />
+                            </description>
                         </input>
 
                         <input conf="quiqqer.settings.blog.hidePageContentIfPaginationActive" type="checkbox">

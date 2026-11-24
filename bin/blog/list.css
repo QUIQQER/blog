@@ -1,0 +1,4 @@
+/* The selected page comes from the rendered list, including after an AJAX update. */
+.quiqqer-blog-list-intro:has(+ .content-template > [data-name="filterableList"] > [data-name="pagination"] option[selected]:not([data-page="1"])) {
+    display: none;
+}
