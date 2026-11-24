@@ -1,5 +1,5 @@
 {if $Template->getAttribute('content-body') && $Site->getAttribute('content') && $showPageContent}
-<section class="content-body">
+<section class="content-body{if $hideOnLaterPages} quiqqer-blog-list-intro{/if}">
     {$Site->getAttribute('content')}
 </section>
 {/if}

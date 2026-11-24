@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<events>
-    <event on="onSiteCreateChild" fire="\QUI\Blog\BlogList::onChildCreate" />
-    <event on="onSiteSaveBefore" fire="\QUI\Blog\BlogList::onSiteSaveBefore"/>
-</events>
+<quiqqer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="https://www.quiqqer.com/docs/schemas/2.x/events.xsd">
+    <events>
+        <event on="onSiteCreateChild" fire="\QUI\Blog\BlogList::onChildCreate"/>
+        <event on="onSiteSaveBefore" fire="\QUI\Blog\BlogList::onSiteSaveBefore"/>
+    </events>
+</quiqqer>
