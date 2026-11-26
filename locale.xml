@@ -90,42 +90,6 @@
     </groups>
 
     <groups name="quiqqer/blog" datatype="php">
-        <locale name="quiqqerblog:bloglist.description">
-            <de><![CDATA[Listet alle darunter liegenden Seiten auf.]]></de>
-            <en><![CDATA[Lists all underlying pages.]]></en>
-            <es><![CDATA[Muestra todas las páginas subordinadas.]]></es>
-            <pt><![CDATA[Lista todas as páginas subordinadas.]]></pt>
-            <fr><![CDATA[Liste toutes les pages enfants.]]></fr>
-            <it><![CDATA[Elenca tutte le pagine figlie.]]></it>
-            <pl><![CDATA[Wyświetla wszystkie strony podrzędne.]]></pl>
-        </locale>
-        <locale name="quiqqerblog:blogentry.title">
-            <de><![CDATA[QUIQQER - Blogeintrag]]></de>
-            <en><![CDATA[QUIQQER - Blog entry]]></en>
-            <es><![CDATA[QUIQQER - Entrada de blog]]></es>
-            <pt><![CDATA[QUIQQER - Artigo do blogue]]></pt>
-            <fr><![CDATA[QUIQQER - Article de blog]]></fr>
-            <it><![CDATA[QUIQQER - Articolo del blog]]></it>
-            <pl><![CDATA[QUIQQER - Wpis na blogu]]></pl>
-        </locale>
-        <locale name="quiqqerblog:blogentry.description">
-            <de><![CDATA[Erstellt eine neue Seite für einen Blogeintrag]]></de>
-            <en><![CDATA[Creates a new page for a blog entry]]></en>
-            <es><![CDATA[Crea una nueva página para una entrada de blog]]></es>
-            <pt><![CDATA[Cria uma nova página para um artigo do blogue]]></pt>
-            <fr><![CDATA[Crée une nouvelle page pour un article de blog]]></fr>
-            <it><![CDATA[Crea una nuova pagina per un articolo del blog]]></it>
-            <pl><![CDATA[Tworzy nową stronę dla wpisu na blogu]]></pl>
-        </locale>
-        <locale name="quiqqerblog:bloglist.title">
-            <de><![CDATA[QUIQQER - Blogliste]]></de>
-            <en><![CDATA[QUIQQER - Blog list]]></en>
-            <es><![CDATA[QUIQQER - Lista de entradas del blog]]></es>
-            <pt><![CDATA[QUIQQER - Lista de artigos do blogue]]></pt>
-            <fr><![CDATA[QUIQQER - Liste des articles du blog]]></fr>
-            <it><![CDATA[QUIQQER - Elenco degli articoli del blog]]></it>
-            <pl><![CDATA[QUIQQER - Lista wpisów na blogu]]></pl>
-        </locale>
 
         <!-- brick author-->
 
@@ -304,15 +268,6 @@
             <it><![CDATA[Nome]]></it>
             <pl><![CDATA[Imię i nazwisko]]></pl>
         </locale>
-        <locale name="site.settings.entry.guestAuthor.avatar">
-            <de><![CDATA[Benutzerbild]]></de>
-            <en><![CDATA[User image]]></en>
-            <es><![CDATA[Imagen de usuario]]></es>
-            <pt><![CDATA[Imagem do utilizador]]></pt>
-            <fr><![CDATA[Image de profil]]></fr>
-            <it><![CDATA[Immagine del profilo]]></it>
-            <pl><![CDATA[Zdjęcie profilowe]]></pl>
-        </locale>
 
         <locale name="admin.types.blog.list">
             <de><![CDATA[Blogliste]]></de>
@@ -323,25 +278,7 @@
             <it><![CDATA[Elenco degli articoli del blog]]></it>
             <pl><![CDATA[Lista wpisów na blogu]]></pl>
         </locale>
-        <locale name="admin.types.blog.list.desc">
-            <de><![CDATA[Blogliste]]></de>
-            <en><![CDATA[Blog List]]></en>
-            <es><![CDATA[Lista de entradas del blog]]></es>
-            <pt><![CDATA[Lista de artigos do blogue]]></pt>
-            <fr><![CDATA[Liste des articles du blog]]></fr>
-            <it><![CDATA[Elenco degli articoli del blog]]></it>
-            <pl><![CDATA[Lista wpisów na blogu]]></pl>
-        </locale>
         <locale name="admin.types.blog.entry">
-            <de><![CDATA[Blogeintrag]]></de>
-            <en><![CDATA[Blog Entry]]></en>
-            <es><![CDATA[Entrada de blog]]></es>
-            <pt><![CDATA[Artigo do blogue]]></pt>
-            <fr><![CDATA[Article de blog]]></fr>
-            <it><![CDATA[Articolo del blog]]></it>
-            <pl><![CDATA[Wpis na blogu]]></pl>
-        </locale>
-        <locale name="admin.types.blog.entry.desc">
             <de><![CDATA[Blogeintrag]]></de>
             <en><![CDATA[Blog Entry]]></en>
             <es><![CDATA[Entrada de blog]]></es>
@@ -393,62 +330,6 @@
             <pl><![CDATA[Treść strony jest wyświetlana tylko na pierwszej stronie listy wpisów, a na kolejnych jest ukryta. To ustawienie jest zalecane, gdy treść jest długa.]]></pl>
         </locale>
 
-        <!-- date and author -->
-        <locale name="quiqqer.settings.blog.entry.dateAndCreator">
-            <de><![CDATA[Autor und Datum]]></de>
-            <en><![CDATA[Author & date]]></en>
-            <es><![CDATA[Autor y fecha]]></es>
-            <pt><![CDATA[Autor e data]]></pt>
-            <fr><![CDATA[Auteur et date]]></fr>
-            <it><![CDATA[Autore e data]]></it>
-            <pl><![CDATA[Autor i data]]></pl>
-        </locale>
-        <locale name="quiqqer.settings.blog.entry.dateAndCreator.default">
-            <de><![CDATA[Standardeinstellung übernehmen]]></de>
-            <en><![CDATA[Use default setting]]></en>
-            <es><![CDATA[Usar la configuración predeterminada]]></es>
-            <pt><![CDATA[Usar a predefinição]]></pt>
-            <fr><![CDATA[Utiliser le paramètre par défaut]]></fr>
-            <it><![CDATA[Usa l'impostazione predefinita]]></it>
-            <pl><![CDATA[Zastosuj ustawienie domyślne]]></pl>
-        </locale>
-        <locale name="quiqqer.settings.blog.entry.dateAndCreator.showAll">
-            <de><![CDATA[Autor und Datum anzeigen]]></de>
-            <en><![CDATA[Show author & date]]></en>
-            <es><![CDATA[Mostrar autor y fecha]]></es>
-            <pt><![CDATA[Mostrar autor e data]]></pt>
-            <fr><![CDATA[Afficher l'auteur et la date]]></fr>
-            <it><![CDATA[Mostra l'autore e la data]]></it>
-            <pl><![CDATA[Pokaż autora i datę]]></pl>
-        </locale>
-        <locale name="quiqqer.settings.blog.entry.dateAndCreator.showCreator">
-            <de><![CDATA[Nur Autor anzeigen]]></de>
-            <en><![CDATA[Show only author]]></en>
-            <es><![CDATA[Mostrar solo el autor]]></es>
-            <pt><![CDATA[Mostrar apenas o autor]]></pt>
-            <fr><![CDATA[Afficher uniquement l'auteur]]></fr>
-            <it><![CDATA[Mostra solo l'autore]]></it>
-            <pl><![CDATA[Pokaż tylko autora]]></pl>
-        </locale>
-        <locale name="quiqqer.settings.blog.entry.dateAndCreator.showDate">
-            <de><![CDATA[Nur Datum anzeigen]]></de>
-            <en><![CDATA[Show only date]]></en>
-            <es><![CDATA[Mostrar solo la fecha]]></es>
-            <pt><![CDATA[Mostrar apenas a data]]></pt>
-            <fr><![CDATA[Afficher uniquement la date]]></fr>
-            <it><![CDATA[Mostra solo la data]]></it>
-            <pl><![CDATA[Pokaż tylko datę]]></pl>
-        </locale>
-        <locale name="quiqqer.settings.blog.entry.dateAndCreator.hide">
-            <de><![CDATA[Ausgeblendet]]></de>
-            <en><![CDATA[Hidden]]></en>
-            <es><![CDATA[Oculto]]></es>
-            <pt><![CDATA[Oculto]]></pt>
-            <fr><![CDATA[Masqué]]></fr>
-            <it><![CDATA[Nascosto]]></it>
-            <pl><![CDATA[Ukryte]]></pl>
-        </locale>
-
         <!-- sites to display -->
         <locale name="list.template.sitesToDisplay">
             <de><![CDATA[Welche Seiten sollen aufgelistet werden?]]></de>
@@ -489,55 +370,6 @@
             <pl><![CDATA[Układ]]></pl>
         </locale>
 
-        <!-- show author -->
-        <locale name="list.showCreator">
-            <de><![CDATA[Autor anzeigen]]></de>
-            <en><![CDATA[Show author]]></en>
-            <es><![CDATA[Mostrar autor]]></es>
-            <pt><![CDATA[Mostrar autor]]></pt>
-            <fr><![CDATA[Afficher l'auteur]]></fr>
-            <it><![CDATA[Mostra autore]]></it>
-            <pl><![CDATA[Pokaż autora]]></pl>
-        </locale>
-
-        <!-- show date -->
-        <locale name="list.showTime">
-            <de><![CDATA[Datum anzeigen]]></de>
-            <en><![CDATA[Show date]]></en>
-            <es><![CDATA[Mostrar fecha]]></es>
-            <pt><![CDATA[Mostrar data]]></pt>
-            <fr><![CDATA[Afficher la date]]></fr>
-            <it><![CDATA[Mostra data]]></it>
-            <pl><![CDATA[Pokaż datę]]></pl>
-        </locale>
-
-        <locale name="list.blog.by">
-            <de><![CDATA[von]]></de>
-            <en><![CDATA[by]]></en>
-            <es><![CDATA[por]]></es>
-            <pt><![CDATA[por]]></pt>
-            <fr><![CDATA[par]]></fr>
-            <it><![CDATA[di]]></it>
-            <pl><![CDATA[Autor:]]></pl>
-        </locale>
-        <locale name="list.blog.on">
-            <de><![CDATA[am]]></de>
-            <en><![CDATA[on]]></en>
-            <es><![CDATA[el]]></es>
-            <pt><![CDATA[em]]></pt>
-            <fr><![CDATA[le]]></fr>
-            <it><![CDATA[il]]></it>
-            <pl><![CDATA[Data:]]></pl>
-        </locale>
-        <locale name="list.more">
-            <de><![CDATA[mehr]]></de>
-            <en><![CDATA[more]]></en>
-            <es><![CDATA[leer más]]></es>
-            <pt><![CDATA[ler mais]]></pt>
-            <fr><![CDATA[lire la suite]]></fr>
-            <it><![CDATA[leggi di più]]></it>
-            <pl><![CDATA[czytaj dalej]]></pl>
-        </locale>
         <locale name="entry.blog.by">
             <de><![CDATA[von]]></de>
             <en><![CDATA[by]]></en>
@@ -555,69 +387,6 @@
             <fr><![CDATA[le]]></fr>
             <it><![CDATA[il]]></it>
             <pl><![CDATA[Data:]]></pl>
-        </locale>
-        <locale name="entry.blog.prev">
-            <de><![CDATA[voriger Beitrag]]></de>
-            <en><![CDATA[previous blog post]]></en>
-            <es><![CDATA[entrada anterior]]></es>
-            <pt><![CDATA[artigo anterior]]></pt>
-            <fr><![CDATA[article précédent]]></fr>
-            <it><![CDATA[articolo precedente]]></it>
-            <pl><![CDATA[poprzedni wpis]]></pl>
-        </locale>
-        <locale name="entry.blog.next">
-            <de><![CDATA[nächster Beitrag]]></de>
-            <en><![CDATA[next blog post]]></en>
-            <es><![CDATA[entrada siguiente]]></es>
-            <pt><![CDATA[artigo seguinte]]></pt>
-            <fr><![CDATA[article suivant]]></fr>
-            <it><![CDATA[articolo successivo]]></it>
-            <pl><![CDATA[następny wpis]]></pl>
-        </locale>
-        <locale name="sheet.first.page">
-            <de><![CDATA[Erste Seite]]></de>
-            <en><![CDATA[First page]]></en>
-            <es><![CDATA[Primera página]]></es>
-            <pt><![CDATA[Primeira página]]></pt>
-            <fr><![CDATA[Première page]]></fr>
-            <it><![CDATA[Prima pagina]]></it>
-            <pl><![CDATA[Pierwsza strona]]></pl>
-        </locale>
-        <locale name="sheet.last.page">
-            <de><![CDATA[Letzte Seite]]></de>
-            <en><![CDATA[Last page]]></en>
-            <es><![CDATA[Última página]]></es>
-            <pt><![CDATA[Última página]]></pt>
-            <fr><![CDATA[Dernière page]]></fr>
-            <it><![CDATA[Ultima pagina]]></it>
-            <pl><![CDATA[Ostatnia strona]]></pl>
-        </locale>
-        <locale name="sheet.back">
-            <de><![CDATA[zurück]]></de>
-            <en><![CDATA[back]]></en>
-            <es><![CDATA[anterior]]></es>
-            <pt><![CDATA[anterior]]></pt>
-            <fr><![CDATA[précédent]]></fr>
-            <it><![CDATA[indietro]]></it>
-            <pl><![CDATA[wstecz]]></pl>
-        </locale>
-        <locale name="sheet.next">
-            <de><![CDATA[vor]]></de>
-            <en><![CDATA[next]]></en>
-            <es><![CDATA[siguiente]]></es>
-            <pt><![CDATA[seguinte]]></pt>
-            <fr><![CDATA[suivant]]></fr>
-            <it><![CDATA[avanti]]></it>
-            <pl><![CDATA[dalej]]></pl>
-        </locale>
-        <locale name="sheet.mobile.option">
-            <de><![CDATA[Seite [from] von [max]]]></de>
-            <en><![CDATA[page [from] of [max]]]></en>
-            <es><![CDATA[Página [from] de [max]]]></es>
-            <pt><![CDATA[Página [from] de [max]]]></pt>
-            <fr><![CDATA[Page [from] sur [max]]]></fr>
-            <it><![CDATA[Pagina [from] di [max]]]></it>
-            <pl><![CDATA[Strona [from] z [max]]]></pl>
         </locale>
 
         <!-- blog entry settings -->
@@ -866,8 +635,6 @@
             <it><![CDATA[Numero di commenti]]></it>
             <pl><![CDATA[Liczba komentarzy]]></pl>
         </locale>
-
-
 
         <locale name="blog.settings.entries">
             <de><![CDATA[Blog-Einträge]]></de>

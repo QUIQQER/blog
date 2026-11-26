@@ -6,9 +6,6 @@
     <types>
         <type type="blog/list" extend="QUI\Blog\BlogList" icon="fa fa-book" child-type="quiqqer/blog:blog/entry">
             <locale group="quiqqer/blog" var="admin.types.blog.list" />
-            <desc>
-                <locale group="quiqqer/intranet" var="admin.types.blog.list.desc" />
-            </desc>
 
             <!-- extra attributes -->
             <attributes>
@@ -362,9 +359,6 @@
 
         <type type="blog/entry" extend="QUI\Blog\Entry" icon="fa fa-paste">
             <locale group="quiqqer/blog" var="admin.types.blog.entry" />
-            <desc>
-                <locale group="quiqqer/blog" var="admin.types.blog.entry.desc" />
-            </desc>
 
             <attributes>
                 <attribute default="enable">quiqqer.settings.blog.entry.comments</attribute>
